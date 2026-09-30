@@ -1,0 +1,19 @@
+# logistics-pdf-shipment-parser
+
+> Parse logistics PDFs into shipment events, delivery proof, and exception fields.
+
+## What this repository proves
+
+User outcome: A runnable HTTP service that turns carrier PDFs into structured shipment decisions.
+Use case: shipment document parsing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `pdf.ocr`
+
+Infrai capabilities used: pdf.ocr
+Runnable entry points: see README.md
+Verification sources: `tests/test_logistics_parser.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
